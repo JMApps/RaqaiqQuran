@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val sectionsPagerAdapter = SectionsPagerAdapter(this, supportFragmentManager)
         binding.vpMainContainer.adapter = sectionsPagerAdapter
         binding.diMainContainer.attachViewPager(binding.vpMainContainer)
+        binding.diMainContainer.setDotTintRes(R.color.red)
 
         binding.fabChapters.setOnClickListener(this)
     }
