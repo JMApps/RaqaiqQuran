@@ -1,4 +1,4 @@
-package jmapps.raqaiqquran
+package jmapps.raqaiqquran.ui.activities
 
 import android.app.Activity
 import android.content.Intent
