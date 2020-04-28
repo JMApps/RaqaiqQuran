@@ -4,8 +4,9 @@
     <color name="colorPrimaryDark">#AE8600</color>
     <color name="colorAccent">#EF5350</color>
 
+    <color name="backgroundColor">#E3E3E3</color>
     <color name="white">#E3E3E3</color>
     <color name="black">#434343</color>
     <color name="main">#434343</color>
-    <color name="red">#B71C1C</color>
+    <color name="dotsColor">#B71C1C</color>
 </resources>

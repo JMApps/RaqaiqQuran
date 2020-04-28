@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4A440D</color>
+    <color name="colorPrimaryDark">#3A350A</color>
+    <color name="colorAccent">#B2EBF2</color>
+
+    <color name="backgroundColor">#4A440D</color>
+    <color name="white">#E3E3E3</color>
+    <color name="black">#434343</color>
+    <color name="main">#E3E3E3</color>
+    <color name="dotsColor">#4DD0E1</color>
+</resources>
