@@ -20,12 +20,13 @@ import jmapps.raqaiqquran.databinding.ActivityMainBinding
 import jmapps.raqaiqquran.mvp.other.OtherContract
 import jmapps.raqaiqquran.mvp.other.OtherPresenterImpl
 import jmapps.raqaiqquran.ui.aboutus.AboutUsBottomSheet
+import jmapps.raqaiqquran.ui.chapters.ChapterBottomSheet
 import jmapps.raqaiqquran.ui.data.ContentList
 import jmapps.raqaiqquran.ui.main.SectionsPagerAdapter
 import jmapps.raqaiqquran.ui.settings.SettingsBottomSheet
 
 class MainActivity : AppCompatActivity(), View.OnClickListener, ViewPager.OnPageChangeListener,
-    OtherContract.OtherView {
+    OtherContract.OtherView, ChapterBottomSheet.SetCurrentChapter {
 
     private lateinit var binding: ActivityMainBinding
 
@@ -113,6 +114,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, ViewPager.OnPage
     }
 
     override fun onClick(v: View?) {
+        val chaptersBottomSheets = ChapterBottomSheet()
+        chaptersBottomSheets.show(supportFragmentManager, ChapterBottomSheet.chaptersTag)
     }
 
     override fun onDestroy() {
@@ -157,5 +160,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, ViewPager.OnPage
         } else {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         }
+    }
+
+    override fun setCurrentChapter(chapterId: Int) {
+        binding.vpMainContainer.currentItem = chapterId - 1
     }
 }
