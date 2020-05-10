@@ -9,4 +9,6 @@
     <color name="black">#434343</color>
     <color name="main">#434343</color>
     <color name="dotsColor">#B71C1C</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="cardViewBackground">#FFFFFF</color>
 </resources>
