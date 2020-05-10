@@ -44,7 +44,7 @@
                             android:layout_width="60dp"
                             android:layout_height="60dp"
                             android:layout_gravity="center"
-                            android:src="@drawable/ic_launcher" />
+                            android:src="@drawable/ic_launch_small" />
 
                         <TextView
                             android:id="@+id/title"

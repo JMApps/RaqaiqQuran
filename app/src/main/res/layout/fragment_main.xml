@@ -17,14 +17,16 @@
             android:id="@+id/pbReadProgress"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="0dp"
-            android:layout_height="1dp"
+            android:layout_height="3dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.core.widget.NestedScrollView
+            android:id="@+id/nsMainContainer"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:scrollbarThumbVertical="@drawable/scroll_thumb"
             android:scrollbars="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
