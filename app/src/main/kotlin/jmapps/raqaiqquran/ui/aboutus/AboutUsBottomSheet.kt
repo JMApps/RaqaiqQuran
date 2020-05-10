@@ -10,6 +10,8 @@ import jmapps.raqaiqquran.R
 
 class AboutUsBottomSheet : BottomSheetDialogFragment() {
 
+    override fun getTheme(): Int = R.style.BottomSheetStyleFull
+
     private lateinit var rootAboutUs: View
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {

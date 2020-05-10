@@ -16,6 +16,8 @@ import jmapps.raqaiqquran.databinding.BottomSheetSettingsBinding
 
 class SettingsBottomSheet : BottomSheetDialogFragment(), SeekBar.OnSeekBarChangeListener {
 
+    override fun getTheme(): Int = R.style.BottomSheetStyleFull
+
     private lateinit var settingBinding: BottomSheetSettingsBinding
 
     private lateinit var preferences: SharedPreferences
